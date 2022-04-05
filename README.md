@@ -1,2 +1,5 @@
-# caixa-de-plano-HP-Telecom
- Caixa de planos usado na home e na aba de planos do site da HP Telecom
+# Caixa de plano do site da HP Telecom
+ Está é uma ideia que produzi no Figma para o site da HP Telecom, para poder estudar Web Desing, HTML, Css e JavaScript.
+ O projeto é baseado no redesign da marca.
+
+ 
