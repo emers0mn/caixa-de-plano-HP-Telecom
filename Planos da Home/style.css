@@ -1,0 +1,144 @@
+@font-face {
+    font-family: gordita-lite;
+    src: url(font/Gordita\ Light.otf);
+}
+
+@font-face {
+    font-family: gordita-medium;
+    src: url(font/Gordita\ Medium.otf);
+}
+
+@font-face {
+    font-family: gordita-black;
+    src: url(font/Gordita\ Black.otf);
+}
+
+@font-face {
+    font-family: gordita-bold;
+    src: url(font/Gordita\ Bold.otf);
+}
+
+body{
+    background-color: rgb(211, 200, 185);
+    margin: 10% 5%;
+    font-family: gordita-lite;
+    font-size: 11px;
+}
+
+#plano{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+
+#plano:hover{
+    background-color: #008930;
+}
+
+.velocidade{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+ 
+ }
+
+h2{
+    font-family: gordita-black;
+    font-size: 50px;
+    color: black;
+}
+
+.mega{
+    font-size: 37px;
+}
+
+h3{
+    font-family: gordita-medium;
+    font-size: 35px;
+    margin: 0px 0px;
+}
+
+h4{
+    color: #008930;
+    font-family: gordita-medium;
+    font-size: 20px;
+    text-decoration: line-through 3px black;
+    margin-bottom: 0px ;
+}
+
+ul{
+    font-family: gordita-medium;
+    list-style: none;
+    padding: 5px 5px;
+    font-size: 13px;
+    margin: 20px;
+}
+
+#download{
+    list-style-image: url(image/Download.png);
+}
+
+#upload{
+    list-style-image: url(image/Uploaud.png);
+}
+
+#fidelidade{
+    list-style-image: url(image/sem\ fidelidade.png);
+}
+
+#wifi{
+    list-style-image: url(image/wifi.png);
+}
+
+#fibra{
+    list-style-image: url(image/fibra.png);
+    position: relative;
+    right: 3px;
+}
+
+#clube{
+    list-style-image: url(image/card.png);
+}
+
+.download{
+    font-family: gordita-bold;
+    font-size: 14px;
+}
+
+.upload{
+    font-family: gordita-lite;
+    font-size: 14px;
+}
+
+.assine{
+    text-align: center;
+    font-size: 16px;
+    font-family: gordita-medium;
+
+    border-radius: 50px;
+    color: white;
+    background-color: #008930;
+    padding: 15px 50px;
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.vencimento{
+    font-family: gordita-medium;
+    font-size: 13px;
+}
+
+.pagamento{
+    font-family: gordita-lite;
+    font-size: 18px;
+}
