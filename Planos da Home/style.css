@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: gordita-regular;
+    src: url(font/Gordita\ Regular.otf);
+}
+
+@font-face {
     font-family: gordita-black;
     src: url(font/Gordita\ Black.otf);
 }
@@ -18,24 +23,31 @@
     src: url(font/Gordita\ Bold.otf);
 }
 
+@font-face {
+    font-family: dancing-bold;
+    src: url(font/DancingScript-Bold.ttf);
+}
+
 body{
     background-color: rgb(211, 200, 185);
     margin: 10% 5%;
-    font-family: gordita-lite;
-    font-size: 11px;
+    font-family: gordita-regular;
+
+    text-align: center;
 }
 
 #plano{
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     position: relative;
-    display: inline-block;
-    padding: 20px;
-    padding-top: 35px;
-    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
 }
 
-#plano:hover{
-    background-color: #008930;
+.bonus{
+    font-family: dancing-bold;
+    color: #00CC3A;
+    font-size: 35px;
 }
 
 .velocidade{
@@ -55,90 +67,142 @@ h2{
 }
 
 .mega{
-    font-size: 37px;
+    font-size: 40px;
 }
 
 h3{
     font-family: gordita-medium;
-    font-size: 35px;
+    font-size: 40px;
     margin: 0px 0px;
+    color: rgba(4, 204, 58, 1);
+    ;
 }
-
 h4{
-    color: #008930;
-    font-family: gordita-medium;
-    font-size: 20px;
-    text-decoration: line-through 3px black;
-    margin-bottom: 0px ;
+    margin: 0 0 0 0 ;
 }
 
 ul{
-    font-family: gordita-medium;
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container-icon{
+    font-family: gordita-medium;
     padding: 5px 5px;
-    font-size: 13px;
-    margin: 20px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
 }
 
-#download{
-    list-style-image: url(image/Download.png);
-}
-
-#upload{
-    list-style-image: url(image/Uploaud.png);
-}
-
-#fidelidade{
-    list-style-image: url(image/sem\ fidelidade.png);
-}
-
-#wifi{
-    list-style-image: url(image/wifi.png);
-}
-
-#fibra{
-    list-style-image: url(image/fibra.png);
-    position: relative;
-    right: 3px;
-}
-
-#clube{
-    list-style-image: url(image/card.png);
+.button{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 50px;
 }
 
 .download{
-    font-family: gordita-bold;
-    font-size: 14px;
+    font-family:gordita-medium;
+}
+
+.icons{
+    display: flex;
+    margin-bottom: 10px;
+
+    justify-content: center;
+    gap: 5px;
 }
 
 .upload{
     font-family: gordita-lite;
-    font-size: 14px;
+}
+
+.divisor{
+    height: 10px;
+    width: 100%;
+    background: linear-gradient(270deg, #04CB3A 0%, #008930 100%);
+    margin-bottom: 10px;
+}
+
+.month{
+    color: black;
+    font-size: 16px;
 }
 
 .assine{
-    text-align: center;
-    font-size: 16px;
-    font-family: gordita-medium;
-
     border-radius: 50px;
     color: white;
     background-color: #008930;
-    padding: 15px 50px;
-    display: inline-block;
+    max-width: 150px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-decoration: none;
 }
-
 a{
     text-decoration: none;
-    color: black;
+}
+
+.link-tv{
+    color: #00CC3A;
 }
 
 .vencimento{
     font-family: gordita-medium;
     font-size: 13px;
 }
-
-.pagamento{
-    font-family: gordita-lite;
-    font-size: 18px;
+.container-new-list{
+    display: flex;
+    justify-content: center;
 }
+.container-bt{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 20px;
+}
+
+.new-list{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    width: 200px;
+    
+}
+
+input[type="checkbox"]{
+    position: relative;
+    width: 50px;
+    height: 20px;
+    -webkit-appearance: none;
+    background-color: #CACACA;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(85, 85, 85, 0.2);
+    transition: .3s;
+  }
+
+  input:checked[type="checkbox"] {
+    background: linear-gradient(269.16deg, #04CB3A 0.16%, #008D1E 94.55%);
+  }
+
+  input[type="checkbox"]:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    transform: scale(1);
+    box-shadow: 0 2px 5px rgba(254, 7, 7, 0.2);
+    transition: .3s;
+  }
+
+  input:checked[type="checkbox"]:before {
+    left: 30px;
+  }
